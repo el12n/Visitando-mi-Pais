@@ -7,3 +7,7 @@
 <h3>Screenshots</h3>
 <hr>
 ![alt tag](https://raw.github.com/el12n/Visitando-mi-Pais/master/screenshots/1.png)
+![alt tag](https://raw.github.com/el12n/Visitando-mi-Pais/master/screenshots/2.png)
+![alt tag](https://raw.github.com/el12n/Visitando-mi-Pais/master/screenshots/3.png)
+![alt tag](https://raw.github.com/el12n/Visitando-mi-Pais/master/screenshots/4.png)
+![alt tag](https://raw.github.com/el12n/Visitando-mi-Pais/master/screenshots/5.png)
