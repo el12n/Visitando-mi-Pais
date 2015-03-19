@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model userDefinedModelVersionIdentifier="" type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="6751" systemVersion="14C1510" minimumToolsVersion="Xcode 4.3" macOSVersion="Automatic" iOSVersion="Automatic">
+    <entity name="Evento" representedClassName="Evento" syncable="YES">
+        <attribute name="fin" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="id" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="inicio" optional="YES" attributeType="Date" syncable="YES"/>
+        <attribute name="provincia" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="titulo" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="municipio" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Municipio" inverseName="eventos" inverseEntity="Municipio" syncable="YES"/>
+    </entity>
+    <entity name="Municipio" representedClassName="Municipio" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="eventos" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Evento" inverseName="municipio" inverseEntity="Evento" syncable="YES"/>
+        <relationship name="provincia" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Provincia" inverseName="municipios" inverseEntity="Provincia" syncable="YES"/>
+    </entity>
+    <entity name="Provincia" representedClassName="Provincia" syncable="YES">
+        <attribute name="id" optional="YES" attributeType="Integer 16" defaultValueString="0" syncable="YES"/>
+        <attribute name="nombre" optional="YES" attributeType="String" syncable="YES"/>
+        <relationship name="municipios" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Municipio" inverseName="provincia" inverseEntity="Municipio" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Evento" positionX="-56" positionY="144" width="128" height="28"/>
+        <element name="Municipio" positionX="-54" positionY="-9" width="128" height="103"/>
+        <element name="Provincia" positionX="-216" positionY="-7" width="108" height="88"/>
+    </elements>
+</model>

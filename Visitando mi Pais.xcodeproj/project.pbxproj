@@ -1,0 +1,494 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		FA3A375C1AB7151200580CDD /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA3A375B1AB7151200580CDD /* MapViewController.swift */; };
+		FA3A375E1AB715E100580CDD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3A375D1AB715E100580CDD /* MapKit.framework */; };
+		FA6EBE2E1AB79C64008DCE16 /* Provincia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EBE2D1AB79C64008DCE16 /* Provincia.swift */; };
+		FA6EBE301AB79C64008DCE16 /* Municipio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EBE2F1AB79C64008DCE16 /* Municipio.swift */; };
+		FA85EB2A1AB85A6000F4DB87 /* EventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85EB291AB85A6000F4DB87 /* EventHandler.swift */; };
+		FA9AE6EE1AB8A5290050B632 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AE6ED1AB8A5290050B632 /* TestViewController.swift */; };
+		FA9BB6191AB9D777004EB597 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BB6181AB9D777004EB597 /* EventCell.swift */; };
+		FAA50A7E1AB36A6600206918 /* MunicipioHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAA50A7D1AB36A6600206918 /* MunicipioHandler.swift */; };
+		FAAE26181AB7756400BD59C0 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FAB178701AB1F19100AF3D8A /* Images.xcassets */; };
+		FAB1786A1AB1F19100AF3D8A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178691AB1F19100AF3D8A /* AppDelegate.swift */; };
+		FAB1786C1AB1F19100AF3D8A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1786B1AB1F19100AF3D8A /* ViewController.swift */; };
+		FAB1786F1AB1F19100AF3D8A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FAB1786D1AB1F19100AF3D8A /* Main.storyboard */; };
+		FAB178741AB1F19100AF3D8A /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = FAB178721AB1F19100AF3D8A /* LaunchScreen.xib */; };
+		FAB178801AB1F19100AF3D8A /* Visitando_mi_PaisTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1787F1AB1F19100AF3D8A /* Visitando_mi_PaisTests.swift */; };
+		FAB1788A1AB1F4C400AF3D8A /* APIController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB178891AB1F4C400AF3D8A /* APIController.swift */; };
+		FAB1788C1AB21A8C00AF3D8A /* ProvinciaController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB1788B1AB21A8C00AF3D8A /* ProvinciaController.swift */; };
+		FAB3033E1AB38A94003E8EA5 /* DatePickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAB3033D1AB38A94003E8EA5 /* DatePickerViewController.swift */; };
+		FAE2885F1AB8D5CC005CCD7E /* Evento.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAE2885E1AB8D5CC005CCD7E /* Evento.swift */; };
+		FAFC5A6A1AB32AE20074EFFB /* PlacesDataModel.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FAFC5A681AB32AE20074EFFB /* PlacesDataModel.xcdatamodeld */; };
+		FAFC5AA11AB364130074EFFB /* MunicipioViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FAFC5AA01AB364130074EFFB /* MunicipioViewController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		FAB1787A1AB1F19100AF3D8A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = FAB1785C1AB1F19100AF3D8A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = FAB178631AB1F19100AF3D8A;
+			remoteInfo = "Visitando mi Pais";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		FA3A375B1AB7151200580CDD /* MapViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
+		FA3A375D1AB715E100580CDD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		FA6EBE2D1AB79C64008DCE16 /* Provincia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provincia.swift; sourceTree = "<group>"; };
+		FA6EBE2F1AB79C64008DCE16 /* Municipio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Municipio.swift; sourceTree = "<group>"; };
+		FA85EB291AB85A6000F4DB87 /* EventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventHandler.swift; sourceTree = "<group>"; };
+		FA9AE6ED1AB8A5290050B632 /* TestViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		FA9BB6181AB9D777004EB597 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
+		FAA50A7D1AB36A6600206918 /* MunicipioHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MunicipioHandler.swift; sourceTree = "<group>"; };
+		FAB178641AB1F19100AF3D8A /* Visitando mi Pais.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Visitando mi Pais.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB178681AB1F19100AF3D8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB178691AB1F19100AF3D8A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		FAB1786B1AB1F19100AF3D8A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		FAB1786E1AB1F19100AF3D8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		FAB178701AB1F19100AF3D8A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		FAB178731AB1F19100AF3D8A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		FAB178791AB1F19100AF3D8A /* Visitando mi PaisTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Visitando mi PaisTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		FAB1787E1AB1F19100AF3D8A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FAB1787F1AB1F19100AF3D8A /* Visitando_mi_PaisTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Visitando_mi_PaisTests.swift; sourceTree = "<group>"; };
+		FAB178891AB1F4C400AF3D8A /* APIController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = APIController.swift; sourceTree = "<group>"; };
+		FAB1788B1AB21A8C00AF3D8A /* ProvinciaController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProvinciaController.swift; sourceTree = "<group>"; };
+		FAB3033D1AB38A94003E8EA5 /* DatePickerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DatePickerViewController.swift; sourceTree = "<group>"; };
+		FAE2885E1AB8D5CC005CCD7E /* Evento.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Evento.swift; sourceTree = "<group>"; };
+		FAFC5A691AB32AE20074EFFB /* PlacesDataModel.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = PlacesDataModel.xcdatamodel; sourceTree = "<group>"; };
+		FAFC5AA01AB364130074EFFB /* MunicipioViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MunicipioViewController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		FAB178611AB1F19100AF3D8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3A375E1AB715E100580CDD /* MapKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB178761AB1F19100AF3D8A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		FAB1785B1AB1F19100AF3D8A = {
+			isa = PBXGroup;
+			children = (
+				FA3A375D1AB715E100580CDD /* MapKit.framework */,
+				FAB178661AB1F19100AF3D8A /* Visitando mi Pais */,
+				FAB1787C1AB1F19100AF3D8A /* Visitando mi PaisTests */,
+				FAB178651AB1F19100AF3D8A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		FAB178651AB1F19100AF3D8A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FAB178641AB1F19100AF3D8A /* Visitando mi Pais.app */,
+				FAB178791AB1F19100AF3D8A /* Visitando mi PaisTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		FAB178661AB1F19100AF3D8A /* Visitando mi Pais */ = {
+			isa = PBXGroup;
+			children = (
+				FAFC5A681AB32AE20074EFFB /* PlacesDataModel.xcdatamodeld */,
+				FAE2885E1AB8D5CC005CCD7E /* Evento.swift */,
+				FA6EBE2F1AB79C64008DCE16 /* Municipio.swift */,
+				FA6EBE2D1AB79C64008DCE16 /* Provincia.swift */,
+				FAA50A7D1AB36A6600206918 /* MunicipioHandler.swift */,
+				FAB178691AB1F19100AF3D8A /* AppDelegate.swift */,
+				FAB1786B1AB1F19100AF3D8A /* ViewController.swift */,
+				FAB1788B1AB21A8C00AF3D8A /* ProvinciaController.swift */,
+				FAB1786D1AB1F19100AF3D8A /* Main.storyboard */,
+				FA9BB6181AB9D777004EB597 /* EventCell.swift */,
+				FA9AE6ED1AB8A5290050B632 /* TestViewController.swift */,
+				FA85EB291AB85A6000F4DB87 /* EventHandler.swift */,
+				FA3A375B1AB7151200580CDD /* MapViewController.swift */,
+				FAFC5AA01AB364130074EFFB /* MunicipioViewController.swift */,
+				FAB3033D1AB38A94003E8EA5 /* DatePickerViewController.swift */,
+				FAB178891AB1F4C400AF3D8A /* APIController.swift */,
+				FAB178701AB1F19100AF3D8A /* Images.xcassets */,
+				FAB178721AB1F19100AF3D8A /* LaunchScreen.xib */,
+				FAB178671AB1F19100AF3D8A /* Supporting Files */,
+			);
+			path = "Visitando mi Pais";
+			sourceTree = "<group>";
+		};
+		FAB178671AB1F19100AF3D8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAB178681AB1F19100AF3D8A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		FAB1787C1AB1F19100AF3D8A /* Visitando mi PaisTests */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1787F1AB1F19100AF3D8A /* Visitando_mi_PaisTests.swift */,
+				FAB1787D1AB1F19100AF3D8A /* Supporting Files */,
+			);
+			path = "Visitando mi PaisTests";
+			sourceTree = "<group>";
+		};
+		FAB1787D1AB1F19100AF3D8A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				FAB1787E1AB1F19100AF3D8A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		FAB178631AB1F19100AF3D8A /* Visitando mi Pais */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB178831AB1F19100AF3D8A /* Build configuration list for PBXNativeTarget "Visitando mi Pais" */;
+			buildPhases = (
+				FAB178601AB1F19100AF3D8A /* Sources */,
+				FAB178611AB1F19100AF3D8A /* Frameworks */,
+				FAB178621AB1F19100AF3D8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "Visitando mi Pais";
+			productName = "Visitando mi Pais";
+			productReference = FAB178641AB1F19100AF3D8A /* Visitando mi Pais.app */;
+			productType = "com.apple.product-type.application";
+		};
+		FAB178781AB1F19100AF3D8A /* Visitando mi PaisTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = FAB178861AB1F19100AF3D8A /* Build configuration list for PBXNativeTarget "Visitando mi PaisTests" */;
+			buildPhases = (
+				FAB178751AB1F19100AF3D8A /* Sources */,
+				FAB178761AB1F19100AF3D8A /* Frameworks */,
+				FAB178771AB1F19100AF3D8A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				FAB1787B1AB1F19100AF3D8A /* PBXTargetDependency */,
+			);
+			name = "Visitando mi PaisTests";
+			productName = "Visitando mi PaisTests";
+			productReference = FAB178791AB1F19100AF3D8A /* Visitando mi PaisTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		FAB1785C1AB1F19100AF3D8A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0620;
+				ORGANIZATIONNAME = "Alvaro De la Cruz Lockhart";
+				TargetAttributes = {
+					FAB178631AB1F19100AF3D8A = {
+						CreatedOnToolsVersion = 6.2;
+					};
+					FAB178781AB1F19100AF3D8A = {
+						CreatedOnToolsVersion = 6.2;
+						TestTargetID = FAB178631AB1F19100AF3D8A;
+					};
+				};
+			};
+			buildConfigurationList = FAB1785F1AB1F19100AF3D8A /* Build configuration list for PBXProject "Visitando mi Pais" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = FAB1785B1AB1F19100AF3D8A;
+			productRefGroup = FAB178651AB1F19100AF3D8A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				FAB178631AB1F19100AF3D8A /* Visitando mi Pais */,
+				FAB178781AB1F19100AF3D8A /* Visitando mi PaisTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		FAB178621AB1F19100AF3D8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAAE26181AB7756400BD59C0 /* Images.xcassets in Resources */,
+				FAB1786F1AB1F19100AF3D8A /* Main.storyboard in Resources */,
+				FAB178741AB1F19100AF3D8A /* LaunchScreen.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB178771AB1F19100AF3D8A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		FAB178601AB1F19100AF3D8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FA3A375C1AB7151200580CDD /* MapViewController.swift in Sources */,
+				FA85EB2A1AB85A6000F4DB87 /* EventHandler.swift in Sources */,
+				FAFC5A6A1AB32AE20074EFFB /* PlacesDataModel.xcdatamodeld in Sources */,
+				FAB1786C1AB1F19100AF3D8A /* ViewController.swift in Sources */,
+				FA6EBE2E1AB79C64008DCE16 /* Provincia.swift in Sources */,
+				FAB3033E1AB38A94003E8EA5 /* DatePickerViewController.swift in Sources */,
+				FAA50A7E1AB36A6600206918 /* MunicipioHandler.swift in Sources */,
+				FA9BB6191AB9D777004EB597 /* EventCell.swift in Sources */,
+				FAFC5AA11AB364130074EFFB /* MunicipioViewController.swift in Sources */,
+				FAE2885F1AB8D5CC005CCD7E /* Evento.swift in Sources */,
+				FAB1786A1AB1F19100AF3D8A /* AppDelegate.swift in Sources */,
+				FA9AE6EE1AB8A5290050B632 /* TestViewController.swift in Sources */,
+				FA6EBE301AB79C64008DCE16 /* Municipio.swift in Sources */,
+				FAB1788A1AB1F4C400AF3D8A /* APIController.swift in Sources */,
+				FAB1788C1AB21A8C00AF3D8A /* ProvinciaController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		FAB178751AB1F19100AF3D8A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAB178801AB1F19100AF3D8A /* Visitando_mi_PaisTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		FAB1787B1AB1F19100AF3D8A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = FAB178631AB1F19100AF3D8A /* Visitando mi Pais */;
+			targetProxy = FAB1787A1AB1F19100AF3D8A /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		FAB1786D1AB1F19100AF3D8A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB1786E1AB1F19100AF3D8A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		FAB178721AB1F19100AF3D8A /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				FAB178731AB1F19100AF3D8A /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		FAB178811AB1F19100AF3D8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		FAB178821AB1F19100AF3D8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		FAB178841AB1F19100AF3D8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Visitando mi Pais/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		FAB178851AB1F19100AF3D8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				INFOPLIST_FILE = "Visitando mi Pais/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		FAB178871AB1F19100AF3D8A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Visitando mi PaisTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Visitando mi Pais.app/Visitando mi Pais";
+			};
+			name = Debug;
+		};
+		FAB178881AB1F19100AF3D8A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "Visitando mi PaisTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Visitando mi Pais.app/Visitando mi Pais";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		FAB1785F1AB1F19100AF3D8A /* Build configuration list for PBXProject "Visitando mi Pais" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB178811AB1F19100AF3D8A /* Debug */,
+				FAB178821AB1F19100AF3D8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB178831AB1F19100AF3D8A /* Build configuration list for PBXNativeTarget "Visitando mi Pais" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB178841AB1F19100AF3D8A /* Debug */,
+				FAB178851AB1F19100AF3D8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		FAB178861AB1F19100AF3D8A /* Build configuration list for PBXNativeTarget "Visitando mi PaisTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				FAB178871AB1F19100AF3D8A /* Debug */,
+				FAB178881AB1F19100AF3D8A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		FAFC5A681AB32AE20074EFFB /* PlacesDataModel.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				FAFC5A691AB32AE20074EFFB /* PlacesDataModel.xcdatamodel */,
+			);
+			currentVersion = FAFC5A691AB32AE20074EFFB /* PlacesDataModel.xcdatamodel */;
+			name = PlacesDataModel.xcdatamodeld;
+			path = ../PlacesDataModel.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = FAB1785C1AB1F19100AF3D8A /* Project object */;
+}
