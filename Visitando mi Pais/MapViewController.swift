@@ -21,7 +21,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         self.mainMapView.delegate = self
         if itemToSearch != nil{
             var formattedQuery = itemToSearch!.stringByReplacingOccurrencesOfString(" (DM)", withString: "", options: NSStringCompareOptions.CaseInsensitiveSearch, range: nil)
-            UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = true;
             if var rangeToDelete = formattedQuery.rangeOfString(","){
                 var rangeOfTittle = Range(start: formattedQuery.startIndex, end:  rangeToDelete.startIndex)
                 var tittle = formattedQuery.substringWithRange(rangeOfTittle)
@@ -48,9 +48,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 println("Error encontrado buscando: \(error.localizedDescription)")
             }else if response.mapItems.count ==  0 {
                 println("No rutas encontradas")
+                let alert = UIAlertView()
+                alert.title = "No encontrado"
+                alert.message = "No se pudo encontrar \(self.title!)"
+                alert.addButtonWithTitle("Aceptar")
+                alert.show()
             }else{
                 println("Coincidencias encontradas")
-                
                 for item in response.mapItems as [MKMapItem]{
                     self.matchingItems.append(item as MKMapItem)
                     var annotation = MKPointAnnotation()
@@ -60,15 +64,7 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 }
             }
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-            if self.matchingItems.count <= 0{
-                let alert = UIAlertView()
-                alert.title = "No encontrado"
-                alert.message = "No se pudo encontrar \(self.title!)"
-                alert.addButtonWithTitle("Aceptar")
-                alert.show()
-            }
         }
-        
     }
     
     func generateRoutes(){

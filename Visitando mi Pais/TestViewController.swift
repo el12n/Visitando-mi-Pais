@@ -124,7 +124,7 @@ class TestViewController: UITableViewController, NSFetchedResultsControllerDeleg
             mapViewController.itemToSearch = "\(evento.municipio.nombre), \(evento.municipio.provincia.nombre)"
         }
     }
-
+    
     func dateFormatter(date: NSDate) -> String{
         var dateFormatter = NSDateFormatter()
         dateFormatter.dateStyle = NSDateFormatterStyle.ShortStyle
@@ -138,10 +138,17 @@ class TestViewController: UITableViewController, NSFetchedResultsControllerDeleg
     }
     
     @IBAction func deleteEvent(sender: UIBarButtonItem) {
-        let indexPath = self.tableView.indexPathForSelectedRow()
-        var event = self.fetchedResultsController.objectAtIndexPath(indexPath!) as Evento
-        var eventoHandler = EventHandler(evento: event)
-        eventoHandler.deleteEvent(self.eventStore!)
+        if (tableView.indexPathForSelectedRow() != nil){
+            let indexPath = self.tableView.indexPathForSelectedRow()
+            var event = self.fetchedResultsController.objectAtIndexPath(indexPath!) as Evento
+            var eventoHandler = EventHandler(evento: event)
+            eventoHandler.deleteEvent(self.eventStore!)
+        }else{
+            let alert = UIAlertController(title: "Error al eliminar", message: "Primero debe selecionar el evento a eliminar", preferredStyle: UIAlertControllerStyle.Alert) as UIAlertController
+            let okAction = UIAlertAction(title: "Aceptar", style: UIAlertActionStyle.Default, handler: nil) as UIAlertAction
+            alert.addAction(okAction)
+            self.presentViewController(alert, animated: true, completion: nil)
+        }
     }
     
 }

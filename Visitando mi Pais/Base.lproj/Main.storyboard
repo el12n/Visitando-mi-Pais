@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7Q-2E-CfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1666" y="1430"/>
+            <point key="canvasLocation" x="2080" y="1430"/>
         </scene>
         <!--Provincias-->
         <scene sceneID="ufC-wZ-h7g">
@@ -361,7 +361,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="08y-MB-fxr" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="98" y="1430"/>
+            <point key="canvasLocation" x="506" y="1430"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eCz-rJ-Pvj">
@@ -379,7 +379,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Axx-35-MXV" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="918" y="1430"/>
+            <point key="canvasLocation" x="1256" y="1430"/>
         </scene>
     </scenes>
     <resources>
@@ -389,6 +389,6 @@
         <image name="ZoomOut" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="sqA-T7-aR7"/>
+        <segue reference="A28-OP-dOi"/>
     </inferredMetricsTieBreakers>
 </document>
