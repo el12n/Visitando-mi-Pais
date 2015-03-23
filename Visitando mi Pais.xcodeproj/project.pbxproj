@@ -204,6 +204,7 @@
 				TargetAttributes = {
 					FAB178631AB1F19100AF3D8A = {
 						CreatedOnToolsVersion = 6.2;
+						DevelopmentTeam = 6VM85LQC29;
 					};
 					FAB178781AB1F19100AF3D8A = {
 						CreatedOnToolsVersion = 6.2;
@@ -393,6 +394,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.simetrica.Visitando-mi-Pais";
 				INFOPLIST_FILE = "Visitando mi Pais/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -404,6 +406,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "Apple Development IOS Push Services: com.simetrica.Visitando-mi-Pais";
 				INFOPLIST_FILE = "Visitando mi Pais/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
