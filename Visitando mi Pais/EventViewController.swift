@@ -9,7 +9,7 @@
 import UIKit
 import CoreData
 
-class TestViewController: UITableViewController, NSFetchedResultsControllerDelegate, EventCellProtocoll {
+class EventViewController: UITableViewController, NSFetchedResultsControllerDelegate, EventCellProtocoll {
     
     var managedObjectContext = (UIApplication.sharedApplication().delegate as AppDelegate).managedObjectContext!
     

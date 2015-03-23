@@ -25,7 +25,8 @@ class ViewController: UIViewController, ProvinciaProtocol, UITableViewDataSource
         // Do any additional setup after loading the view, typically from a nib.
         self.provinciaController = ProvinciaController(delegate: self)
         if !self.provinciaController.dbIsFilledWithData(){
-            UIApplication.sharedApplication().networkActivityIndicatorVisible = true
+            loadingAlert()
+//            UIApplication.sharedApplication().networkActivityIndicatorVisible = true
             self.provinciaController.requestProvincias()
             var municipioHandler = MunicipioHandler() as MunicipioHandler
             municipioHandler.requestMunicipios()
@@ -33,6 +34,16 @@ class ViewController: UIViewController, ProvinciaProtocol, UITableViewDataSource
             self.provincias = self.provinciaController.getAllProvinciasFromDb()
             self.tableView.reloadData()
         }
+    }
+    
+    func loadingAlert(){
+        let alert = UIAlertController(title: "Cargando, favor espere...\n\n\n", message: nil, preferredStyle: UIAlertControllerStyle.Alert)
+        let spinner = UIActivityIndicatorView(activityIndicatorStyle: UIActivityIndicatorViewStyle.WhiteLarge)
+        spinner.center = CGPointMake(130.5, 65.5)
+        spinner.color = UIColor.blackColor()
+        spinner.startAnimating()
+        alert.view.addSubview(spinner)
+        self.presentViewController(alert, animated: false, completion: nil)
     }
     
     override func didReceiveMemoryWarning() {
@@ -63,7 +74,8 @@ class ViewController: UIViewController, ProvinciaProtocol, UITableViewDataSource
     
     func didListLoad() {
         dispatch_async(dispatch_get_main_queue(), {
-            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+            self.dismissViewControllerAnimated(true, completion: nil)
+//            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
             self.provincias = self.provinciaController.getAllProvinciasFromDb()
             self.tableView.reloadData()
         });

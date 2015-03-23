@@ -120,7 +120,7 @@
                         <barButtonItem key="backBarButtonItem" title="Atrás" id="zfj-0Z-Q1F"/>
                         <barButtonItem key="rightBarButtonItem" image="AgendaTab" id="Mw4-VB-375">
                             <connections>
-                                <segue destination="JSU-iK-I9X" kind="show" id="Q5D-Dj-46b"/>
+                                <segue destination="JSU-iK-I9X" kind="show" identifier="ProvinciaToEvent" id="Q5D-Dj-46b"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
@@ -206,6 +206,9 @@
                         <subviews>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E94-aN-ASN">
                                 <rect key="frame" x="279" y="72" width="42" height="21"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="21" id="0rI-3m-KIm"/>
+                                </constraints>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
@@ -228,14 +231,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstAttribute="centerY" secondItem="Cp4-Vi-gzJ" secondAttribute="centerY" constant="-134" id="52B-fR-aL2"/>
-                            <constraint firstItem="oWU-AN-3VF" firstAttribute="leading" secondItem="hmI-OW-cd1" secondAttribute="leadingMargin" constant="-21" id="9i5-1J-TYa"/>
-                            <constraint firstItem="E94-aN-ASN" firstAttribute="centerX" secondItem="hmI-OW-cd1" secondAttribute="centerX" id="Bc5-Rr-2Fu"/>
-                            <constraint firstItem="Cp4-Vi-gzJ" firstAttribute="centerX" secondItem="oWU-AN-3VF" secondAttribute="centerX" constant="-0.5" id="D26-TT-5h1"/>
-                            <constraint firstAttribute="trailingMargin" secondItem="oWU-AN-3VF" secondAttribute="trailing" constant="-18" id="Vbm-Gc-Sew"/>
-                            <constraint firstItem="oWU-AN-3VF" firstAttribute="top" secondItem="E94-aN-ASN" secondAttribute="bottom" constant="32" id="i9W-mv-cub"/>
-                            <constraint firstItem="E94-aN-ASN" firstAttribute="top" secondItem="D0G-NJ-kUa" secondAttribute="bottom" constant="8" symbolic="YES" id="vrM-TC-iqS"/>
-                            <constraint firstItem="oWU-AN-3VF" firstAttribute="top" secondItem="hmI-OW-cd1" secondAttribute="top" constant="125" id="yNv-Na-mtX"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="oWU-AN-3VF" secondAttribute="trailing" constant="-18" id="8xI-K1-8Wo"/>
+                            <constraint firstItem="vvq-L6-vvh" firstAttribute="top" secondItem="Cp4-Vi-gzJ" secondAttribute="bottom" constant="151" id="QMB-fZ-QRg"/>
+                            <constraint firstItem="E94-aN-ASN" firstAttribute="top" secondItem="D0G-NJ-kUa" secondAttribute="bottom" constant="8" symbolic="YES" id="Sdq-k8-BRu"/>
+                            <constraint firstItem="E94-aN-ASN" firstAttribute="centerX" secondItem="hmI-OW-cd1" secondAttribute="centerX" id="Umy-pg-gmX"/>
+                            <constraint firstItem="oWU-AN-3VF" firstAttribute="centerX" secondItem="Cp4-Vi-gzJ" secondAttribute="centerX" id="ZqA-DZ-wkF"/>
+                            <constraint firstItem="oWU-AN-3VF" firstAttribute="leading" secondItem="hmI-OW-cd1" secondAttribute="leadingMargin" constant="-21" id="fUL-9v-Bny"/>
+                            <constraint firstItem="oWU-AN-3VF" firstAttribute="top" secondItem="E94-aN-ASN" secondAttribute="bottom" constant="32" id="haZ-i3-Ad8"/>
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Visitar" id="UqK-Lx-Syb">
@@ -271,7 +273,7 @@
         <!--Eventos-->
         <scene sceneID="A2t-Xz-Okp">
             <objects>
-                <tableViewController id="JSU-iK-I9X" customClass="TestViewController" customModule="Visitando_mi_Pais" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="JSU-iK-I9X" customClass="EventViewController" customModule="Visitando_mi_Pais" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="80" sectionHeaderHeight="22" sectionFooterHeight="22" id="uTW-UZ-O8h">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

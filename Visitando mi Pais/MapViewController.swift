@@ -48,11 +48,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 println("Error encontrado buscando: \(error.localizedDescription)")
             }else if response.mapItems.count ==  0 {
                 println("No rutas encontradas")
-                let alert = UIAlertView()
-                alert.title = "No encontrado"
-                alert.message = "No se pudo encontrar \(self.title!)"
-                alert.addButtonWithTitle("Aceptar")
-                alert.show()
             }else{
                 println("Coincidencias encontradas")
                 for item in response.mapItems as [MKMapItem]{
@@ -64,6 +59,13 @@ class MapViewController: UIViewController, MKMapViewDelegate {
                 }
             }
             UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+            if self.matchingItems.count <= 0{
+                let alert = UIAlertView()
+                alert.title = "No encontrado"
+                alert.message = "No se pudo encontrar \(self.title!)"
+                alert.addButtonWithTitle("Aceptar")
+                alert.show()
+            }
         }
     }
     
