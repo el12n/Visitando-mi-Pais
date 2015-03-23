@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1510" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2nB-Hx-sVZ">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="6751" systemVersion="14C1514" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="2nB-Hx-sVZ">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="6736"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -66,7 +66,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="m7Q-2E-CfC" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1714" y="1430"/>
+            <point key="canvasLocation" x="1666" y="1430"/>
         </scene>
         <!--Provincias-->
         <scene sceneID="ufC-wZ-h7g">
@@ -84,7 +84,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <prototypes>
-                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="detailDisclosureButton" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProvinciaCell" textLabel="T4G-Yp-nBl" style="IBUITableViewCellStyleDefault" id="sRz-jZ-e97">
+                                    <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ProvinciaCell" textLabel="T4G-Yp-nBl" style="IBUITableViewCellStyleDefault" id="sRz-jZ-e97">
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="sRz-jZ-e97" id="qwL-3O-jSd">
                                             <autoresizingMask key="autoresizingMask"/>
@@ -117,7 +117,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Provincias" id="FX2-44-Kyt">
-                        <barButtonItem key="backBarButtonItem" title="Átras" id="zfj-0Z-Q1F"/>
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="zfj-0Z-Q1F"/>
                         <barButtonItem key="rightBarButtonItem" image="AgendaTab" id="Mw4-VB-375">
                             <connections>
                                 <segue destination="JSU-iK-I9X" kind="show" id="Q5D-Dj-46b"/>
@@ -126,7 +126,6 @@
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="gnt-Ad-aWH" id="Nq8-hM-08V"/>
-                        <segue destination="mAJ-UT-Fh1" kind="presentation" identifier="ProvinciaToMap" modalPresentationStyle="pageSheet" id="Y8d-3k-T5W"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
@@ -182,7 +181,7 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" title="Municipio" id="dVD-03-TlM">
-                        <barButtonItem key="backBarButtonItem" title="Átras" id="YHO-15-4iK"/>
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="YHO-15-4iK"/>
                     </navigationItem>
                     <connections>
                         <outlet property="tableView" destination="eXM-Cf-LXF" id="DRQ-io-C5g"/>
@@ -239,7 +238,9 @@
                             <constraint firstItem="oWU-AN-3VF" firstAttribute="top" secondItem="hmI-OW-cd1" secondAttribute="top" constant="125" id="yNv-Na-mtX"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Visitar" id="UqK-Lx-Syb"/>
+                    <navigationItem key="navigationItem" title="Visitar" id="UqK-Lx-Syb">
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="UXT-sr-I19"/>
+                    </navigationItem>
                     <connections>
                         <outlet property="dateLabel" destination="E94-aN-ASN" id="y5G-DD-gle"/>
                         <outlet property="datePicker" destination="oWU-AN-3VF" id="9vD-L3-vCn"/>
@@ -301,7 +302,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha fin" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="uDb-yb-TDe">
                                             <rect key="frame" x="8" y="41" width="558" height="30"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                         <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yc1-Ht-cJg">
@@ -314,7 +315,7 @@
                                         <label opaque="NO" userInteractionEnabled="NO" tag="1" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Fecha inicio" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aF1-yj-pAS">
                                             <rect key="frame" x="8" y="14" width="558" height="39"/>
                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                             <nil key="highlightedColor"/>
                                         </label>
                                     </subviews>
@@ -347,7 +348,7 @@
                         </connections>
                     </tableView>
                     <navigationItem key="navigationItem" title="Eventos" id="EVz-J8-q4f">
-                        <barButtonItem key="backBarButtonItem" title="Átras" id="Q0q-KQ-KEb"/>
+                        <barButtonItem key="backBarButtonItem" title="Atrás" id="Q0q-KQ-KEb"/>
                         <barButtonItem key="rightBarButtonItem" systemItem="trash" id="xIy-h1-c04">
                             <connections>
                                 <action selector="deleteEvent:" destination="JSU-iK-I9X" id="z5o-0b-dHr"/>
@@ -388,6 +389,6 @@
         <image name="ZoomOut" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="A28-OP-dOi"/>
+        <segue reference="sqA-T7-aR7"/>
     </inferredMetricsTieBreakers>
 </document>

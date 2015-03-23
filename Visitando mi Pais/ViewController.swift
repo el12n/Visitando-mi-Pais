@@ -58,23 +58,15 @@ class ViewController: UIViewController, ProvinciaProtocol, UITableViewDataSource
             let myIndexPath = self.tableView.indexPathForSelectedRow()
             let row = myIndexPath?.row
             municipioViewController.provinciaId = self.provincias[row!].id
-        }else if segue.identifier == "ProvinciaToMap"{
-            let navController = segue.destinationViewController as UINavigationController
-            let mapViewController  = navController.topViewController as MapViewController
-            let myIndexPath = sender as NSIndexPath
-            let row = myIndexPath.row
-            mapViewController.itemToSearch = self.provincias[row].name
         }
     }
     
-    func tableView(tableView: UITableView, accessoryButtonTappedForRowWithIndexPath indexPath: NSIndexPath) {
-        performSegueWithIdentifier("ProvinciaToMap", sender: indexPath)
-    }
-    
     func didListLoad() {
-        UIApplication.sharedApplication().networkActivityIndicatorVisible = false
-        self.provincias = self.provinciaController.getAllProvinciasFromDb()
-        self.tableView.reloadData()
+        dispatch_async(dispatch_get_main_queue(), {
+            UIApplication.sharedApplication().networkActivityIndicatorVisible = false
+            self.provincias = self.provinciaController.getAllProvinciasFromDb()
+            self.tableView.reloadData()
+        });
     }
 }
 
