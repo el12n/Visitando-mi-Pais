@@ -20,8 +20,14 @@ class DatePickerViewController: UIViewController {
         super.viewDidLoad()
         self.appDelegate = UIApplication.sharedApplication().delegate as? AppDelegate
         self.title = "Visitar \(self.municipio!.nombre!)"
+        limitateDatePicker()
         dateLabel.text = dateFormatter(NSDate())
         self.datePicker.addTarget(self, action: Selector("datePickerChanged:"), forControlEvents: UIControlEvents.ValueChanged)
+    }
+    
+    func limitateDatePicker(){
+        self.datePicker.date = NSDate(timeIntervalSinceNow: NSTimeInterval(2))
+        self.datePicker.minimumDate = NSDate(timeIntervalSinceNow: NSTimeInterval(0))
     }
     
     override func didReceiveMemoryWarning() {
