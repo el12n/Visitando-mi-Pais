@@ -255,7 +255,7 @@
         <!--Navigation Controller-->
         <scene sceneID="4Hy-kb-vnQ">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2nB-Hx-sVZ" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2nB-Hx-sVZ" customClass="NavigationController" customModule="Visitando_mi_Pais" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="QWj-8d-ZGb">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -368,7 +368,7 @@
         <!--Navigation Controller-->
         <scene sceneID="eCz-rJ-Pvj">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mAJ-UT-Fh1" sceneMemberID="viewController">
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="mAJ-UT-Fh1" customClass="NavigationController" customModule="Visitando_mi_Pais" customModuleProvider="target" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="ph6-CS-Nyw">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
@@ -391,6 +391,6 @@
         <image name="ZoomOut" width="29" height="29"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="A28-OP-dOi"/>
+        <segue reference="sqA-T7-aR7"/>
     </inferredMetricsTieBreakers>
 </document>

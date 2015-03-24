@@ -11,6 +11,7 @@
 		FA3A375E1AB715E100580CDD /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = FA3A375D1AB715E100580CDD /* MapKit.framework */; };
 		FA6EBE2E1AB79C64008DCE16 /* Provincia.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EBE2D1AB79C64008DCE16 /* Provincia.swift */; };
 		FA6EBE301AB79C64008DCE16 /* Municipio.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA6EBE2F1AB79C64008DCE16 /* Municipio.swift */; };
+		FA7E3B491AC1ACBF009E83BA /* NavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA7E3B481AC1ACBF009E83BA /* NavigationController.swift */; };
 		FA85EB2A1AB85A6000F4DB87 /* EventHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA85EB291AB85A6000F4DB87 /* EventHandler.swift */; };
 		FA9AE6EE1AB8A5290050B632 /* EventViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9AE6ED1AB8A5290050B632 /* EventViewController.swift */; };
 		FA9BB6191AB9D777004EB597 /* EventCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FA9BB6181AB9D777004EB597 /* EventCell.swift */; };
@@ -44,6 +45,7 @@
 		FA3A375D1AB715E100580CDD /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
 		FA6EBE2D1AB79C64008DCE16 /* Provincia.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Provincia.swift; sourceTree = "<group>"; };
 		FA6EBE2F1AB79C64008DCE16 /* Municipio.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Municipio.swift; sourceTree = "<group>"; };
+		FA7E3B481AC1ACBF009E83BA /* NavigationController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NavigationController.swift; sourceTree = "<group>"; };
 		FA85EB291AB85A6000F4DB87 /* EventHandler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventHandler.swift; sourceTree = "<group>"; };
 		FA9AE6ED1AB8A5290050B632 /* EventViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventViewController.swift; sourceTree = "<group>"; };
 		FA9BB6181AB9D777004EB597 /* EventCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EventCell.swift; sourceTree = "<group>"; };
@@ -114,6 +116,7 @@
 				FAA50A7D1AB36A6600206918 /* MunicipioHandler.swift */,
 				FAB178691AB1F19100AF3D8A /* AppDelegate.swift */,
 				FAB1786B1AB1F19100AF3D8A /* ViewController.swift */,
+				FA7E3B481AC1ACBF009E83BA /* NavigationController.swift */,
 				FAB1788B1AB21A8C00AF3D8A /* ProvinciaController.swift */,
 				FAB1786D1AB1F19100AF3D8A /* Main.storyboard */,
 				FA9BB6181AB9D777004EB597 /* EventCell.swift */,
@@ -265,6 +268,7 @@
 				FAA50A7E1AB36A6600206918 /* MunicipioHandler.swift in Sources */,
 				FA9BB6191AB9D777004EB597 /* EventCell.swift in Sources */,
 				FAFC5AA11AB364130074EFFB /* MunicipioViewController.swift in Sources */,
+				FA7E3B491AC1ACBF009E83BA /* NavigationController.swift in Sources */,
 				FAE2885F1AB8D5CC005CCD7E /* Evento.swift in Sources */,
 				FAB1786A1AB1F19100AF3D8A /* AppDelegate.swift in Sources */,
 				FA9AE6EE1AB8A5290050B632 /* EventViewController.swift in Sources */,
