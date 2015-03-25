@@ -14,8 +14,10 @@ class NavigationController: UINavigationController, UIViewControllerTransitionin
         super.viewDidLoad()
         
         self.navigationBar.barStyle = UIBarStyle.Default
-        self.navigationBar.barTintColor = self.UIColorFromRGB(0x209624)
+        self.navigationBar.barTintColor = self.UIColorFromRGB(0x209987)
         self.navigationBar.tintColor = UIColor.whiteColor()
+        let titleDict: NSDictionary = [NSForegroundColorAttributeName: UIColor.whiteColor()]
+        self.navigationBar.titleTextAttributes = titleDict
 
     }
     
